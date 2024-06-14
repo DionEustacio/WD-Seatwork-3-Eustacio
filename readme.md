@@ -4,23 +4,23 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com//">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/cat-1274094_1280.png" alt="Cat" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Header and Footer</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  This project is an interactive website designed to showcase various header and footer designs created using fundamental web development technologies: HTML, CSS, and optionally, JavaScript.
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=DionEustacio/WD-SEATWORK-3-EUSTACIO)
 
 ---
 
@@ -57,13 +57,33 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
-
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+Header and Footer
+- This project is an interactive website showcasing various header and footer designs created using pure HTML and CSS. It allows users to explore different static and animated header and footer styles through a user-friendly interface.
+- Key Elements
+Header: Displays the website title and a short description.
+Main Content: Provides an explanation of the project's purpose and introduces the user to the gallery sections.
+Button Panel: Contains buttons for each gallery section (e.g., "Header Gallery," "Footer Gallery").
+Gallery Sections: Each section displays various header or footer designs. They are initially hidden and become visible upon clicking the corresponding button.
+Design Links: Each design within a gallery section is represented by a link with a descriptive text, allowing users to potentially explore the HTML/CSS code behind the design (depending on your implementation).
+- Technology Used:
+HTML (Hypertext Markup Language): Forms the structure and content of the webpage, including headings, paragraphs, buttons, and links.
+CSS (Cascading Style Sheets): Defines the visual presentation of the webpage, including layout, colors, fonts, and responsiveness (how the page adapts to different screen sizes).
+JavaScript (Optional): Adds interactivity to the webpage. In this case, JavaScript is used to:
+Detect button clicks.
+Identify the target gallery section based on the clicked button.
+Display the corresponding gallery section by changing its display property.
+- How Technology is Used:
+HTML:
+Creates the overall webpage structure.
+Defines headings, paragraphs, buttons, and links for navigation.
+Structures the header, main content, button panel, and gallery sections using appropriate HTML tags.
+CSS:
+Styles the visual appearance of the webpage elements (header, buttons, gallery sections).
+Defines colors, fonts, spacing, and layout for a visually appealing presentation.
+JavaScript (Optional):
+Listens for user interaction (clicking buttons).
+When a button is clicked, JavaScript retrieves the ID of the target gallery section based on the button's data attribute.
+It then manipulates the target section's display property (changing it from none to block), making it visible to the user.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
@@ -115,6 +135,4 @@ WD-ProjectName
 ## Resources
 
 <!-- TODO: Add References -->
-| Title | Purpose | Link |
-|-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+Not available
