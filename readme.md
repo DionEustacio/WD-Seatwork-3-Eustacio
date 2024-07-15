@@ -138,3 +138,6 @@ WD-ProjectName
 |-|-|-|
 | Learn HTML headers & footers in 5 minutes! | HTML header footer tutorial example explained | https://youtu.be/JNFdCgmMkPk?si=QHDHB8LImlpYyAvC
 | How To Make A Header And Footer Using HTML & CSS | Header & Footer For Website Design | https://youtu.be/B087M_29ySE?si=5DlXhhD0jHf4mgPZ
+
+## Deployment Link:
+https://dioneustacio.github.io/WD-Seatwork-3-Eustacio/
