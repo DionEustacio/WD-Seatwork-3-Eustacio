@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  top: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -9,13 +10,36 @@ a {
   text-decoration: none;
 }
 
-body {
+.container{
+  display: grid;
+  grid-template-rows:  100px repeat(25,50px);
+  grid-template-columns: 60px 1fr;
+
+}
+
+
+.home{
   display: flex;
+  grid-column: 1 / 3;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: fit-content;
-  width: 100vw;
-  overflow-x: hidden;
+
+}
+
+.home p{
+  font-size: 20px;
+  margin-top: 2px;
+  color: black;
+}
+
+.home a{
+  text-decoration: none;
+}
+
+.home #h1{
+  font-size: 30px;
+  color: rgb(255,198,66);
 }
 
 /* Global section styling */
@@ -81,135 +105,120 @@ section {
 }
 
 /* Header Design Two */
-.design-two {
-  width: 100vw;
-  height: 40vh;
+.item-2{
   display: flex;
+  flex-direction: row;
+  grid-column: 2 / 3;
+  grid-row: 4;
+  height: 80%;
+  padding-top: 8px;
+  background-color:rgb(230, 173, 187);
   justify-content: space-between;
-  padding: 0.7rem 10vw;
-  align-items: flex-start; /* Align items at the top */
-  background: black;
-  border: 2px solid #0093E9;
-  position: relative;
+  
 }
 
-.design-two .navigation {
+.item-2 p{
+  font-size: 15px;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
 }
 
-.design-two .navigation-content {
-  color: white;
-  font-weight: 800;
-  font-size: 1.2rem;
+.item-2 #Right{
+  column-gap: 15px;
+  padding-top: 5px;
+  margin-left: 55px;
+}
+
+.item-2 #Right a{
   text-decoration: none;
-  padding: 0.5rem 1rem; /* Padding for button */
-  border: 2px solid #0093E9; /* Border for square appearance */
-  border-radius: 5px; /* Rounded corners */
-  margin: 0 10px; /* Space around each button */
+  color: black;
 }
 
-.design-two .left-nav {
+.item-2 #Right i{
+  font-size: 15px;
+}
+
+.item-2 #Right h1{
+  font-size: 15px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.item-2 #Middle{
   display: flex;
-  align-items: center;
+  column-gap: 70px;
+  margin-right: 100px;
 }
 
-.design-two .right-nav {
-  display: flex;
-  align-items: center;
-}
-
-.design-two .company-logo {
-  height: 100px;
-  cursor: pointer;
-  position: absolute;
-  top: 10px; /* Position at the top */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for center alignment */
-}
-
-.design-two .call-to-action {
-  border: 1px white solid;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  color: white;
-  font-weight: 800;
-  font-size: 1.2rem;
+.item-2 #Middle p{
+  font-size: 13px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: none;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  font-stretch: narrower;
+  
+}
+.item-2 #Middle a{
+  text-decoration: none;
+}
+
+.item-2 #Left{
+  margin-right: 55px;
+}
+
+.item-2 #Left i{
+  font-size: 18px;
+  color: black;
 }
 
 /* Header Design Three */
-.design-three {
-  width: 100vw;
-  height: 40vh; /* Set a fixed height for landscape */
+.item-3{
   display: flex;
-  font-family: "SquareFont", sans-serif;
-  background: black; /* Black background */
+  flex-direction: row;
   justify-content: space-between;
-  padding: 0.7rem 14vw;
-  box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 1);
-  border: 2px solid #0093E9; /* Gold outline */
-  border-radius: 5px;
-  position: relative;
+  background-color: rgb(0, 33, 82);
+  
 }
 
-.design-three .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; /* Occupy full width */
+.item-3 #left #boot{
+  column-gap: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
-.design-three .nav-left,
-.design-three .nav-right {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+.item-3 #left #nav{
+  column-gap: 10px;
+  margin-left: 12px;
+  margin-top: 14px;
 }
 
-.design-three .nav-left {
-  margin-right: auto; /* Align to left */
-}
-
-.design-three .nav-right {
-  margin-left: auto; /* Align to right */
-}
-
-.design-three .company-logo {
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the logo */
-}
-
-.design-three .nav-button {
-  color: white;
-  font-weight: 800;
-  font-size: 1.2rem;
+.item-3 #left #nav a{
   text-decoration: none;
-  padding: 0.5rem 1rem; /* Padding for button */
-  border: 2px solid #0093E9; /* Border for square appearance */
-  border-radius: 5px; /* Rounded corners */
-  margin: 0 10px; /* Space around each button */
-  background-color: #0093E9; /* Button background color */
-}
-
-.design-three .navigation-content {
-  color: white; /* White text color */
-}
-
-.design-three .bi {
   color: white;
-  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:lighter ;
 }
 
+.item-3 #left #boot i{
+  font-size: 25px;
+  color: white;
+}
+
+.item-3 #right{
+  display: flex;
+  align-items: center;
+}
+
+.item-3 #right #icon i{
+  color: white;
+  margin-right: 50px ;
+}
+
+.item-3 #right i{
+  margin-right: 15px;
+  color: white;
+}
 /* Header Design Four */
 .design-four {
   width: 100vw;
@@ -224,48 +233,58 @@ section {
   border: 2px solid #0093E9; /* Gold outline */
 }
 
-.design-four .welcome-section {
+.item-4{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item-4 #left{
+  margin-left: 30px;
+  column-gap: 10px;
+}
+
+.item-4 #left #facebook a{
+  font-size: 40px;
+  color: rgb(8,102,255);
+}
+
+.item-4 #left #search i{
+  font-size: 15px;
+  color: rgb(119,121,125);
+}
+
+.item-4 #middle{
+  column-gap: 80px;
+}
+
+.item-4 #middle i{
+  font-size: 20px;
+  color: rgb(119,121,125);
+}
+
+.item-4 #right{
+  column-gap: 10px;
+}
+
+.item-4 #right #circle{
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color:rgb(228,230,235);
+  display: flex;
   justify-content: center;
-  text-align: center;
 }
 
-.design-four .welcome-text,
-.design-four .join-now-text {
-  color: white;
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
+.item-4 #right #circle i{
+  color: black;
+  font-size: 15px;
 }
 
-.design-four .company-logo {
-  height: 70px;
+.item-4 #right #leftI {
+  margin-right: 25px;
 }
-
-.design-four .auth-buttons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.design-four .or-text {
-  color: white;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-.design-four {
-  background-color: #000000;
-  color: white;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-}
-
 
 
 /* Header Design Five */
@@ -392,293 +411,224 @@ header.design-one-animation .search-button:hover {
 }
 
 /* Header Design Two */
-.design-two-animation {
-  width: 100vw;
-  height: 40vh;
+.item-7{
   display: flex;
+  flex-direction: row;
+  grid-column: 2 /3;
+  grid-row: 16;
+  height: 80%;
+  padding-top: 8px;
+  background-color:rgb(230, 170, 187);
   justify-content: space-between;
-  padding: 0.7rem 10vw;
-  align-items: flex-start; /* Align items at the top */
-  background: black;
-  border: 2px solid #0093E9;
-  position: relative;
 }
 
-.design-two-animation .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
+.item-7 p{
+  font-size: 15px;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.design-two-animation .navigation-content {
-  color: white;
-  font-weight: 800;
-  font-size: 1.2rem;
+.item-7 #Right{
+  column-gap: 15px;
+  padding-top: 5px;
+  margin-left: 55px;
+}
+
+.item-7 #Right a{
   text-decoration: none;
-  padding: 0.5rem 1rem; /* Padding for button */
-  border: 2px solid #0093E9; /* Border for square appearance */
-  border-radius: 5px; /* Rounded corners */
-  margin: 0 10px; /* Space around each button */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition properties */
+  color: black;
 }
 
-.design-two-animation .navigation-content:hover {
-  background-color: #0093E9; /* Change background color on hover */
-  color: black; /* Change text color on hover */
-  transform: scale(1.1); /* Scale effect on hover */
+.item-7 p:hover {
+  border-bottom: 2px solid black;
+  transition: all 0.1s ease 0s;
 }
 
-.design-two-animation .left-nav,
-.design-two-animation .right-nav {
+.item-7 h1:hover {
+  border-bottom: 2px solid black;
+  transition: all 0.1s ease 0s;
+}
+
+
+
+.item-7 #Right i{
+  font-size: 15px;
+}
+
+.item-7 #Right h1{
+  font-size: 15px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.item-7 #Middle{
   display: flex;
-  align-items: center;
+  column-gap: 70px;
+  margin-right: 100px;
 }
 
-.design-two-animation .company-logo {
-  height: 100px;
-  cursor: pointer;
-  position: absolute;
-  top: 10px; /* Position at the top */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for center alignment */
-}
-
-.design-two-animation .call-to-action {
-  border: 1px white solid;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  color: white;
-  font-weight: 800;
-  font-size: 1.2rem;
+.item-7 #Middle p{
+  font-size: 13px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: none;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition properties */
+  font-stretch: narrower;
+  
+}
+.item-7 #Middle a{
+  text-decoration: none;
 }
 
-.design-two-animation .call-to-action:hover {
-  transform: scale(1.2); /* Scale effect on hover */
-  box-shadow: 0 0 20px #0093E9; /* Glow effect on hover */
+.item-7 #Left{
+  margin-right: 55px;
 }
 
 
+
+.item-7 #Left i{
+  font-size: 18px;
+  color: black;
+}
 /* Header Design Three */
-.design-three-animation {
-  width: 100vw;
-  height: 40vh; /* Set a fixed height for landscape */
+.item-8{
   display: flex;
-  font-family: "SquareFont", sans-serif;
-  background: black; /* Black background */
+  flex-direction: row;
   justify-content: space-between;
-  padding: 0.7rem 14vw;
-  box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 1);
-  border: 2px solid #0093E9; /* Gold outline */
-  border-radius: 5px;
-  position: relative;
+  background-color: rgb(0, 33, 82);
+  
 }
 
-.design-three-animation .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; /* Occupy full width */
+.item-8 #left #boot{
+  column-gap: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
-.design-three-animation .nav-left,
-.design-three-animation .nav-right {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+.item-8 #nav a:not(:hover){
+  border-bottom: 1px solid wheat;
+  transition: all 0.3s ease 0s;
 }
 
-.design-three-animation .nav-left {
-  margin-right: auto; /* Align to left */
+.item-8 #left #nav{
+  column-gap: 10px;
+  margin-left: 12px;
+  margin-top: 14px;
 }
 
-.design-three-animation .nav-right {
-  margin-left: auto; /* Align to right */
-}
-
-.design-three-animation .company-logo {
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the logo */
-}
-
-.design-three-animation .nav-button {
-  color: white;
-  font-weight: 800;
-  font-size: 1.2rem;
+.item-8 #left #nav a{
   text-decoration: none;
-  padding: 0.5rem 1rem; /* Padding for button */
-  border: 2px solid gold; /* Border for square appearance */
-  border-radius: 5px; /* Rounded corners */
-  margin: 0 10px; /* Space around each button */
-  position: relative;
-  display: inline-block;
-}
-
-.design-three-animation .button {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
-}
-
-.design-three-animation .button a {
   color: white;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  background-color: #FFA12B;
-  display: block;
-  padding: 0.5rem 1rem;
-  text-shadow: 0px 1px 0px #000;
-  box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
-  border-radius: 5px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:lighter ;
 }
 
-.design-three-animation .button a:active {
-  top: 10px;
-  background-color: #F78900;
-  box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+.item-8 #left #boot i{
+  font-size: 25px;
+  color: white;
 }
 
-.design-three-animation .button:after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  padding: 4px;
-  position: absolute;
-  bottom: -15px;
-  left: -4px;
-  z-index: -1;
-  background-color: #2B1800;
-  border-radius: 5px;
+.item-8 #left #boot a:hover{
+  transform: rotateY(180deg);
+  transition: all 0.2s ease 0s;
 }
 
-.design-three-animation .navigation-content {
-  color: white; /* White text color */
+.item-8 #right{
+  display: flex;
+  align-items: center;
+}
+
+.item-8 #right #icon i{
+  color: white;
+  margin-right: 50px ;
+}
+
+.item-8 #right i{
+  margin-right: 15px;
+  color: white;
+}
+
+.item-8 #right a:not(:hover){
+  transform: rotateX(360deg);
+  transition: all 0.5s ease 0s;
 }
 
 /* Header Design Four */
-.design-four-animation {
-  width: 100vw;
-  height: 40vh; /* Set a fixed height for landscape */
+.item-9{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background: black;
-  gap: 1rem;
-  padding: 1.5rem 0;
-  box-shadow: 0 10px rgba(124, 124, 124, 0.534);
-  border: 2px solid #0093E9; /* Gold outline */
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.design-four-animation .welcome-section {
+.item-9 #left{
+  margin-left: 30px;
+  column-gap: 10px;
+}
+
+.item-9 #left #facebook a{
+  font-size: 40px;
+  color: rgb(8,102,255);
+}
+
+.item-9 #left #search i{
+  font-size: 15px;
+  color: rgb(119,121,125);
+}
+
+.item-9 #left #search i:hover{
+  color:black;
+  font-size: larger;
+}
+
+
+.item-9 #middle{
+  column-gap: 80px;
+}
+
+.item-9 #middle i{
+  font-size: 22px;
+  color: rgb(119,121,125);
+  padding: 10px;
+}
+
+.item-9 #middle i:active{
+  color: rgb(8,102,255);
+  background-color: rgb(228,230,235);
+  padding-bottom: 30px;
+  transition: all 0.2s ease 0s;
+}
+
+
+.item-9 #right{
+  column-gap: 10px;
+}
+
+.item-9 #right #circle{
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  background-color: rgb(235,245,255);
 }
 
-.design-four-animation .welcome-text,
-.design-four-animation .join-now-text {
-  color: white;
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
+.item-9 #right #circle i{
+  color: black;
+  font-size: 15px;
 }
 
-.design-four-animation .company-logo {
-  height: 70px;
-  animation: spin 5s linear infinite;
+.item-9 #right #circle i:active{
+  color: rgb(8,102,254);
 }
 
-.design-four-animation .auth-buttons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.item-9 #right #circle:not(:active){
+  background-color:rgb(228,230,235);
+  transition: all 0.2s ease 0s;
 }
 
-.design-four-animation .or-text {
-  color: white;
-  font-weight: 700;
-  font-size: 1.2rem;
+.item-9 #right #leftI {
+  margin-right: 25px;
 }
-
-.design-four-animation .box-1 { background-color: black; }
-
-.design-four-animation .btn {
-  line-height: 50px;
-  height: 50px;
-  text-align: center;
-  width: 250px;
-  cursor: pointer;
-}
-
-.design-four-animation .btn-one {
-  color: #FFF;
-  transition: all 0.3s;
-  position: relative;
-}
-.design-four-animation .btn-one span {
-  transition: all 0.3s;
-}
-.design-four-animation .btn-one::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-top-color: rgba(255,255,255,0.5);
-  border-bottom-color: rgba(255,255,255,0.5);
-  transform: scale(0.1, 1);
-}
-.design-four-animation .btn-one:hover span {
-  letter-spacing: 2px;
-}
-.design-four-animation .btn-one:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
-}
-.design-four-animation .btn-one::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.3s;
-  background-color: rgba(255,255,255,0.1);
-}
-.design-four-animation .btn-one:hover::after {
-  opacity: 0; 
-  transform: scale(0.1, 1);
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 /* Header Design Five */
 .design-five-animation {
   width: 100vw;
