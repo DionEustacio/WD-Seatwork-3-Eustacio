@@ -95,7 +95,6 @@ It then manipulates the target section's display property (changing it from none
 <!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
@@ -137,6 +136,9 @@ WD-ProjectName
 |-|-|-|
 | Learn HTML headers & footers in 5 minutes! | HTML header footer tutorial example explained | https://youtu.be/JNFdCgmMkPk?si=QHDHB8LImlpYyAvC
 | How To Make A Header And Footer Using HTML & CSS | Header & Footer For Website Design | https://youtu.be/B087M_29ySE?si=5DlXhhD0jHf4mgPZ
+|Header-1|Copied the layout of the header in the website|https://feu.instructure.com/|
+|Header-3|Copied the layout of the header in the website|https://icons.getbootstrap.com/|
+|Header-4|Copied the layout of the the header in the website + took inspiration of the animations when clicking the elements within the header|https://www.facebook.com/|
 
 ## Deployment Link:
 https://dioneustacio.github.io/WD-Seatwork-3-Eustacio/
