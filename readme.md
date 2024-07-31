@@ -88,9 +88,8 @@ It then manipulates the target section's display property (changing it from none
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Animations
 
 ### Technology
 <!-- TODO: List of Technology Used -->
